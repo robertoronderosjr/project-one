@@ -1,0 +1,47 @@
+Project One — Directory Structure
+Generated: 2026-02-08 01:51 EST
+
+project-one/
+│
+├── agents/                          # Agent prompts and configuration
+│   ├── engineer.md                  # Engineer agent prompt (7.6 KB)
+│   └── README.md                    # Agent roster and documentation
+│
+├── config/                          # Deployment configuration
+│   ├── cron-jobs.sh                 # Cron setup guide
+│   └── spawn-engineer.sh            # Engineer spawn script (executable)
+│
+├── docs/                            # Project documentation
+│   ├── adr/                         # Architectural Decision Records
+│   ├── PRD.md                       # Product Requirements Document
+│   └── TRD.md                       # Technical Requirements Document
+│
+├── src/                             # Source code
+│   └── project_one/
+│       └── __init__.py              # Package initialization
+│
+├── tests/                           # Test suite
+│   ├── integration/                 # Integration tests
+│   ├── unit/                        # Unit tests
+│   ├── __init__.py
+│   └── conftest.py                  # Pytest configuration
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                   # GitHub Actions CI/CD
+│
+├── logs/                            # Agent activity logs (created, empty)
+│
+├── .gitignore                       # Git ignore rules
+├── pyproject.toml                   # Python project configuration
+│
+├── BOOTSTRAP.md                     # Deployment completion guide ⭐
+├── DEPLOYMENT_SUMMARY.md            # This deployment summary ⭐
+├── QUICKREF.md                      # Quick reference card ⭐
+└── README.md                        # Project overview ⭐
+
+Files Created: 19 total
+Total Size: ~500 KB (mostly .git directory)
+Documentation: ~35 KB
+
+⭐ = Start here for activation
