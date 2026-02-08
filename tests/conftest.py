@@ -6,4 +6,4 @@ import pytest
 @pytest.fixture
 def example_fixture():
     """Example fixture for tests."""
-    return {"key": "value"}
+    return {"status": "ok"}
