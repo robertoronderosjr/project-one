@@ -1,0 +1,69 @@
+{
+  "project_id": "project-one",
+  "name": "Project One",
+  "description": "Test project for Luna Framework multi-agent deployment",
+  "created_at": "2026-02-08T01:51:00Z",
+  "version": "0.1.0",
+  "team": {
+    "agents": [
+      {
+        "id": "engineer",
+        "name": "Engineer",
+        "description": "Software Engineer for Project One",
+        "role_type": "engineer",
+        "model": "openai-codex",
+        "model_tier": "codex",
+        "tools": [
+          "read",
+          "write",
+          "edit",
+          "exec",
+          "web_search",
+          "web_fetch",
+          "github",
+          "serena",
+          "context7"
+        ],
+        "can_spawn": [
+          "architect",
+          "research"
+        ],
+        "capabilities": [
+          "python-fastapi-patterns",
+          "pytest-patterns",
+          "conventional-commits",
+          "redis-patterns"
+        ],
+        "prompt_file": "agents/engineer.md",
+        "working_dir": "/home/admin/projects/project-one",
+        "schedule": {
+          "cron": "0 9,14,20 * * *",
+          "timezone": "America/New_York"
+        },
+        "status": "configured"
+      }
+    ],
+    "topology": {
+      "type": "mesh",
+      "coordinator_id": null
+    }
+  },
+  "constraints": {
+    "max_concurrent_agents": 3,
+    "working_hours": "07:00-23:00",
+    "budget_daily_usd": 10.0
+  },
+  "integrations": {
+    "github": {
+      "repo": "robertoronderosjr/project-one",
+      "project_id": null
+    },
+    "redis": {
+      "enabled": true,
+      "namespace": "project-one"
+    },
+    "openclaw": {
+      "gateway_url": "http://localhost:18789"
+    }
+  }
+}
